@@ -7,124 +7,98 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__left">
-        <ul class="header__menu">
-          <li>
-            <button class="button button__burger" type="button">
-              <img src="img/burger.svg" alt="Меню" />
-            </button>
-          </li>
-          <li>
-            <a class="header__logo" href="#"
-              ><img src="img/Group.svg" alt="Логотип"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="header__right">
-        <ul class="header__communication">
-          <li>
-            <button class="button">
-              <img src="img/call.svg" alt="Заказать звонок" />
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <img src="img/chat.svg" alt="Открыть чат" />
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <img src="img/profile.svg" alt="Профиль" />
-            </button>
-          </li>
-        </ul>
-        <ul class="header__services">
-          <li>
-            <button class="button">
-              <img src="img/repair.svg" alt="Оставить заявку" />
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <img src="img/checkstatus.svg" alt="Статус ремонта" />
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="main__services">
-        <h1 class="main__title">Услуги и сервисы</h1>
-        <ul class="main__application">
-          <li>
-            <button class="button main__repair">
-              <img src="img/repair.svg" alt="Оставить заявку" />
-            </button>
-          </li>
-          <li>
-            <button class="button main__checkstatus">
-              <img src="img/checkstatus.svg" alt="Статус ремонта" />
-            </button>
-          </li>
-        </ul>
-      </section>
-      <nav class="main__navigation">
-        <ul class="main__navigation--list">
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href">Ремонтируемые бренды</a>
-          </li>
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href"
-              >Ремонтируемые устройства</a
-            >
-          </li>
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href">Цены на услуги</a>
-          </li>
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href"
-              >Адреса сервисных центров</a
-            >
-          </li>
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href">Специальные цены</a>
-          </li>
-          <li class="main__navigation--item">
-            <a href="" class="main__navigation--href">Отзывы</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="main__content">
-        <article class="main__about-us">
-          <p class="main__text-1">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
-          <br />
-          <p class="main__text-2">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера
-          </p>
-          <p class="main__text-3">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
-          </p>
-          <button class="button main__button">
-            <img src="img/expand.svg" alt="читать далее" />
-            <p class="main__button--text">Читать далее</p>
-          </button>
-        </article>
-        <img
-          src="img/photo_with-logo.jpg"
-          alt="Большое лого"
-          class="main__img"
-        />
-      </section>
+    <div class="container-aside">
+      <aside class="aside">
+      <header class="header">
+        <nav class="header__navigation">
+          <ul class="header__menu">
+            <li>
+              <button class="button header__button">
+                <img src="img/burger.svg" alt="Закрыть" />
+              </button>
+            </li>
+            <li>
+              <a class="header__logo" href="#">
+                <img src="img/Group.svg" alt="Логотип" />
+              </a>
+            </li>
+            <li>
+              <button class="button button__search header__button">
+                <img src="img/search.svg" alt="Поиск" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main__navigation--item">
+              <a class="main__navigation--href active" href="#">Ремонт техники</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Услуги и сервисы</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#"
+                >Корпоративным клиентам</a
+              >
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Продавцам техники</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Партнерам</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Производителям</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="main__navigation--item">
+              <a class="main__navigation--href" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main__bottom">
+          <nav class="feedback-navigation">
+            <ul class="feedback-navigation__list">
+              <li>
+                <button class="button feedback-navigation__button">
+                  <img src="img/chat copy.svg" alt="Заказать звонок" />
+                </button>
+              </li>
+              <li>
+                <button class="button feedback-navigation__button">
+                  <img src="img/chat.svg" alt="Начать чат" />
+                </button>
+              </li>
+              <li>
+                <button class="button feedback-navigation__button">
+                  <img src="img/profile.svg" alt="Профиль" />
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <section class="contact-information">
+            <p class="contact-information__email">mail@cps.com</p>
+            <p class="contact-information__number">8 800 890 8900</p>
+          </section>
+          <ul class="language">
+            <li class="language__item">
+              <button class="language__button current">RU</button>
+            </li>
+            <li class="language__item">
+              <button class="language__button">EN</button>
+            </li>
+            <li class="language__item">
+              <button class="language__button">CH</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
     </main>
   </body>
 </html>
