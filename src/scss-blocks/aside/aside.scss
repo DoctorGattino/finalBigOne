@@ -1,1 +1,8 @@
-body {width: 100px;}
+.container-aside {
+  width: 320px;
+}
+
+.container-aside__visible {
+  display: flex;
+  flex-direction: column;
+}
