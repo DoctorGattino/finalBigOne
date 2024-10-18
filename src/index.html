@@ -4,65 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final web</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-aside container-aside__visible">
       <aside class="aside">
-      <header class="aside__header">
-        <nav class="header__navigation">
-          <ul class="header__menu">
-            <li>
-              <button class="button header__button">
-                <img src="img/burger.svg" alt="Закрыть" />
-              </button>
+        <header class="aside__header">
+          <nav>
+            <ul class="aside__list">
+              <li>
+                <button class="button burger__close">
+                  <img src="img/burger.svg" alt="Закрыть" />
+                </button>
+              </li>
+              <li>
+                <a class="header__logo" href="#">
+                  <img src="img/Group.svg" alt="Логотип" />
+                </a>
+              </li>
+              <li class="aside__list--right">
+                <button class="button button__search">
+                  <img src="img/search.svg" alt="Поиск" />
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <nav class="aside-navigation">
+          <ul class="aside-navigation__list">
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href active" href="#"
+                >Ремонт техники</a
+              >
             </li>
-            <li>
-              <a class="header__logo" href="#">
-                <img src="img/Group.svg" alt="Логотип" />
-              </a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#">Услуги и сервисы</a>
             </li>
-            <li>
-              <button class="button button__search header__button">
-                <img src="img/search.svg" alt="Поиск" />
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <nav class="main-navigation">
-          <ul class="main-navigation__list">
-            <li class="main__navigation--item">
-              <a class="main__navigation--href active" href="#">Ремонт техники</a>
-            </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Услуги и сервисы</a>
-            </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#"
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#"
                 >Корпоративным клиентам</a
               >
             </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Продавцам техники</a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#">Продавцам техники</a>
             </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Партнерам</a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#">Партнерам</a>
             </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Производителям</a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#">Производителям</a>
             </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Наши сервисные центры</a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#"
+                >Наши сервисные центры</a
+              >
             </li>
-            <li class="main__navigation--item">
-              <a class="main__navigation--href" href="#">Контакты</a>
+            <li class="aside-navigation__item">
+              <a class="aside-navigation__href" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="main__bottom">
+        <div class="aside-bottom">
           <nav class="feedback-navigation">
             <ul class="feedback-navigation__list">
               <li>
@@ -100,6 +103,6 @@
         </div>
       </aside>
     </div>
-    </main>
+    <main></main>
   </body>
 </html>
