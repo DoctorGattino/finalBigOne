@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="scss/style.css" />
   </head>
-  <body>
+  <body class="body">
     <div class="container-aside container-aside__visible">
       <aside class="aside">
         <header class="aside__header">
@@ -103,6 +103,124 @@
         </div>
       </aside>
     </div>
-    <main></main>
+    <header class="header">
+      <nav class="header__left">
+        <ul class="header__menu">
+          <li>
+            <button class="button button__burger" type="button">
+              <img src="img/burger.svg" alt="Меню" />
+            </button>
+          </li>
+          <li>
+            <a class="header__logo" href="#"
+              ><img src="img/Group.svg" alt="Логотип"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__right">
+        <ul class="header__communication">
+          <li>
+            <button class="button">
+              <img src="img/call.svg" alt="Заказать звонок" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/chat.svg" alt="Открыть чат" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/profile.svg" alt="Профиль" />
+            </button>
+          </li>
+        </ul>
+        <ul class="header__services">
+          <li>
+            <button class="button">
+              <img src="img/repair.svg" alt="Оставить заявку" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/checkstatus.svg" alt="Статус ремонта" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__services">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <ul class="main__application">
+          <li>
+            <button class="button main__repair">
+              <img src="img/repair.svg" alt="Оставить заявку" />
+            </button>
+          </li>
+          <li>
+            <button class="button main__checkstatus">
+              <img src="img/checkstatus.svg" alt="Статус ремонта" />
+            </button>
+          </li>
+        </ul>
+      </section>
+      <nav class="main__navigation">
+        <ul class="main__navigation--list">
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href">Ремонтируемые бренды</a>
+          </li>
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href"
+              >Ремонтируемые устройства</a
+            >
+          </li>
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href">Цены на услуги</a>
+          </li>
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href"
+              >Адреса сервисных центров</a
+            >
+          </li>
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href">Специальные цены</a>
+          </li>
+          <li class="main__navigation--item">
+            <a href="" class="main__navigation--href">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main__content">
+        <article class="main__about-us">
+          <p class="main__text-1">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <br />
+          <p class="main__text-2">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера
+          </p>
+          <p class="main__text-3">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <button class="button main__button">
+            <img src="img/expand.svg" alt="читать далее" />
+            <p class="main__button--text">Читать далее</p>
+          </button>
+        </article>
+        <img
+          src="img/photo_with-logo.jpg"
+          alt="Большое лого"
+          class="main__img"
+        />
+      </section>
+    </main>
   </body>
 </html>

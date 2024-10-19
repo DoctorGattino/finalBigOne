@@ -1,5 +1,6 @@
 .container-aside {
-  width: 320px;
+  display: none;
+  min-width: 320px;
   box-shadow: 10px -50px 130px -80px black;
 }
 
@@ -11,6 +12,7 @@
 }
 .aside {
   padding-left: 16px;
+  width: 320px;
   &__list {
     display: flex;
 
@@ -176,8 +178,12 @@
 }
 
 @media (min-width: 1366px) {
-  body {
+  .body {
     width: 1440px;
+  }
+
+  .container-aside {
+    display: flex;
   }
 
   .burger__close {
