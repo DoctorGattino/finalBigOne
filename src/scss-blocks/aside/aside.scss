@@ -10,7 +10,7 @@
 .container-aside__visible {
 }
 .aside {
-  
+  padding-left: 16px;
   &__list {
     display: flex;
 
@@ -34,7 +34,7 @@
   }
 }
 .burger__close {
-  padding-left: 16px;
+
   padding-top: 24px;
 }
 .header__logo {
@@ -44,7 +44,7 @@
   padding-bottom: 20.27px;
 }
 
-.aside__navigation {
+.aside-navigation {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -53,11 +53,11 @@
 
 .aside-navigation__list {
   display: inline-block;
-  padding: 0 16px;
+  padding: 0;
   max-height: 1024px;
 }
 .aside-navigation__item {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .aside-navigation__href {
   font-size: 16px;
@@ -65,7 +65,6 @@
   letter-spacing: -0.2px;
   font-family: "TT Lakes-medium", "sans-serif";
   display: inline-block;
-  padding: 5px 0;
   color: #1b1c21;
   width: 100%;
 }
@@ -87,26 +86,113 @@
   }
 
 .aside-bottom {
+
 }
 .feedback-navigation {
+
 }
 .feedback-navigation__list {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
 }
-.button {
-}
+
 .feedback-navigation__button {
 }
 .contact-information {
 }
 .contact-information__email {
+  font-family: "TT Lakes-medium", "sans-serif";
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 .contact-information__number {
+  margin-top: 12px;
+  font-family: "TT Lakes-bold", "sans-serif";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
 }
 .language {
+  display: flex;
+  gap: 7px;
 }
 .language__item {
+  margin-bottom: 32px;
+  margin-top: 8px;
 }
 .language__button {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-family: "TT Lakes-medium", "sans-serif";
 }
 .current {
+}
+
+@media (min-width: 768px) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 24px;
+    &__list {
+      display: flex;
+  
+      &--right{
+        margin-right: 24px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .aside-navigation__item {
+    margin-bottom: 32px;
+  }
+
+  .active::before {
+    margin-right: 20px;
+    margin-left: -24px;
+  }
+
+
+  .aside-bottom {
+
+  }
+
+  .language__item {
+    margin-bottom: 32px;
+    margin-top: 40px;
+  }
+
+  .header__logo {
+    padding-bottom: 46.27px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    width: 1440px;
+  }
+
+  .burger__close {
+
+    display: none;
+  }
+
+  .header__logo {
+    padding-left: 0;
+    padding-bottom: 37.27px;
+  }
+
+  .language__item {
+    margin-bottom: 32px;
+  }
+  
+
 }
