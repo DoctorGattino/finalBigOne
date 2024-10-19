@@ -391,7 +391,8 @@ template {
 .container-aside {
   display: none;
   min-width: 320px;
-  box-shadow: 10px -50px 130px -80px black; }
+  box-shadow: 10px -50px 130px -80px black;
+  background-color: #fff; }
 
 .aside {
   padding-left: 16px;
@@ -516,7 +517,8 @@ template {
   .body {
     width: 1440px; }
   .container-aside {
-    display: flex; }
+    display: flex;
+    box-shadow: none; }
   .burger__close {
     display: none; }
   .header__logo {
@@ -524,6 +526,9 @@ template {
     padding-bottom: 37.27px; }
   .aside-navigation__item {
     margin-bottom: 28px; } }
+
+.body {
+  margin: auto; }
 
 .header {
   display: flex;
@@ -681,7 +686,7 @@ p {
 
 @media (min-width: 1366px) {
   body {
-    max-width: 1120px;
+    max-width: 1440px;
     margin: 0;
     display: flex; }
   .header {
@@ -761,14 +766,17 @@ p {
 .swiper-pagination-bullet-active {
   background: #b5b6bc; }
 
-.header {
+html {
+  background-color: #f8f8f8; }
+
+.brands__title {
   background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff);
-  height: 80px;
+  max-height: 80px;
   margin: 0;
   padding: 0;
   border-top: 1px solid #d9fff5; }
 
-.header__title {
+.brands__title {
   font-family: "TT Lakes-Regular", "sans-serif";
   font-size: 16px;
   line-height: 24px;
@@ -846,8 +854,6 @@ body::after {
   cursor: pointer; }
 
 @media (min-width: 369px) {
-  .header {
-    height: 56px; }
   .brands-list__item {
     margin-top: 24px; } }
 
@@ -856,7 +862,7 @@ body::after {
     overflow: auto; } }
 
 @media (min-width: 768px) {
-  .header__title {
+  .brands__title {
     padding: 16px 24px; }
   /*     высота грид контейнера */
   .brands {
@@ -910,7 +916,7 @@ body::after {
     bottom: 0px; } }
 
 @media (min-width: 1120px) {
-  .header__title {
+  .brands__title {
     padding: 16px 32px; }
   .brands-list {
     display: grid !important;
