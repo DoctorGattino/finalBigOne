@@ -1,5 +1,5 @@
 .body {
-  
+  margin: auto;
 }
 
 .header {
@@ -203,7 +203,7 @@ p {
 
 @media (min-width: 1366px) {
   body {
-    max-width: 1120px;
+    max-width: 1440px;
     margin: 0;
     display: flex;
   }
