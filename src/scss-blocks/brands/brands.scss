@@ -1,11 +1,11 @@
-.header {
+.brands__title {
   background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff);
-  height: 80px;
+  max-height: 80px;
   margin: 0;
   padding: 0;
   border-top: 1px solid #d9fff5;
 }
-.header__title {
+.brands__title {
   font-family: "TT Lakes-Regular", "sans-serif";
   font-size: 16px;
   line-height: 24px;
@@ -102,8 +102,7 @@ body::after {
 
 
 @media (min-width: 369px) {
-  .header {
-    height: 56px;
+  .brands__title {
   }
   .brands-list__item {
     margin-top: 24px;
@@ -117,7 +116,7 @@ body::after {
 }
 
 @media (min-width: 768px) {
-  .header__title {
+  .brands__title {
     padding: 16px 24px;
   }
 
@@ -192,7 +191,7 @@ body::after {
 }
 
 @media (min-width: 1120px) {
-  .header__title {
+  .brands__title {
     padding: 16px 32px;
   }
 
