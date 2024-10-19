@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isHidden) {
       // Показываем бренды
-      brandsContainer.style.height = '380px';
+      brandsContainer.classList.replace('brands', 'brands--big');
       showButton.textContent = 'Скрыть';
       showButton.classList.remove('main__buttons--show-all');
       showButton.classList.add('main__buttons--hidden');
     } else {
       // Скрываем бренды
 
-      brandsContainer.style.height = '190px';
+      brandsContainer.classList.replace('brands--big', 'brands');
       showButton.textContent = 'Показать все';
       showButton.classList.remove('main__buttons--hidden');
       showButton.classList.add('main__buttons--show-all');

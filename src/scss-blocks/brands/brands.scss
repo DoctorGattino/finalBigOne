@@ -129,6 +129,10 @@ body::after {
     height: 190px;
   }
 
+  .brands--big {
+    height: 380px;
+  }
+
   .brands-list {
     display: grid !important;
     grid-template-columns: repeat(3, 224px);
@@ -143,7 +147,7 @@ body::after {
 
   .main__buttons {
     display: block;
-
+    margin-bottom: 25px;
     margin-top: 6px;
   }
 
@@ -166,7 +170,7 @@ body::after {
   }
 
   .main__buttons--show-all {
-    top: 15px;
+/*     margin-bottom: 36px; */
   }
 
   .main__buttons--show-all::before {
@@ -179,6 +183,10 @@ body::after {
     position: absolute;
     left: 1px;
     bottom: 0px;
+  }
+
+  .main__buttons--hidden {
+    margin-bottom: 20px;
   }
 
   .main__buttons--hidden::before {
@@ -207,13 +215,18 @@ body::after {
     margin-left: 32px;
   }
 
+  .brands--big {
+    height: 280px;
+  }
+
+
   .brands-list__button {
     width: 240px;
   }
 
   .main__buttons--hidden {
-    bottom: 80px;
     z-index: 2;
+   /*  margin-bottom: -50px; */
   }
 
   .content-buttons {

@@ -1,0 +1,23 @@
+.devices-wrapper {
+  height: 284px;
+}
+
+.devices {
+  margin-left: 16px;
+}
+
+.devices__list {
+  gap: 16px;
+  height: 160px;
+}
+
+.devices__button {
+  display: flex;
+  height: 160px;
+  width: 240px;
+  border: 1px solid;
+}
+
+.devices__button:hover {
+  transform: none;
+}
