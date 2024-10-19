@@ -867,6 +867,8 @@ body::after {
   /*     высота грид контейнера */
   .brands {
     height: 190px; }
+  .brands--big {
+    height: 380px; }
   .brands-list {
     display: grid !important;
     grid-template-columns: repeat(3, 224px);
@@ -877,6 +879,7 @@ body::after {
     width: 224px; }
   .main__buttons {
     display: block;
+    margin-bottom: 25px;
     margin-top: 6px; }
   .content-buttons {
     background-color: transparent;
@@ -893,7 +896,7 @@ body::after {
     transform: scale(1.1);
     transition: transform 0.2s; }
   .main__buttons--show-all {
-    top: 15px; }
+    /*     margin-bottom: 36px; */ }
   .main__buttons--show-all::before {
     content: "";
     background-image: url(./static/expand-down.svg);
@@ -904,6 +907,8 @@ body::after {
     position: absolute;
     left: 1px;
     bottom: 0px; }
+  .main__buttons--hidden {
+    margin-bottom: 20px; }
   .main__buttons--hidden::before {
     content: "";
     background-image: url(./static/expand-up.svg);
@@ -924,13 +929,34 @@ body::after {
     grid-template-rows: repeat(3, 72px);
     gap: 16px 32px;
     margin-left: 32px; }
+  .brands--big {
+    height: 280px; }
   .brands-list__button {
     width: 240px; }
   .main__buttons--hidden {
-    bottom: 80px;
-    z-index: 2; }
+    z-index: 2;
+    /*  margin-bottom: -50px; */ }
   .content-buttons {
     margin-left: 31px; } }
+
+.devices-wrapper {
+  height: 284px; }
+
+.devices {
+  margin-left: 16px; }
+
+.devices__list {
+  gap: 16px;
+  height: 160px; }
+
+.devices__button {
+  display: flex;
+  height: 160px;
+  width: 240px;
+  border: 1px solid; }
+
+.devices__button:hover {
+  transform: none; }
 
 
 /*# sourceMappingURL=style.css.map*/
