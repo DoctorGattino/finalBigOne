@@ -207,7 +207,7 @@
       </section>
       <section>
         <h1 class="brands__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
-        <section class="brands swiper">
+        <section class="brands swiper-brands swiper">
           <ul class="brands-list swiper-wrapper">
             <li class="brands-list__item swiper-slide">
               <button class="brands-list__button swiper--slide button">
@@ -265,29 +265,107 @@
               </button>
             </li>
           </ul>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination__brands swiper-pagination"></div>
         </section>
         <div class="main__buttons">
-          <button class="content-buttons main__buttons--show-all button" id="showButton">
+          <button class="content-buttons main__buttons--show-all button" id="showButtonBrands">
             Показать все
           </button>
         </div>
       </section>
-      <section class="devices-wrapper">
-        <h1 class="brands__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h1>
-        <div class="devices swiper">
+      <section class="devices-wrapper devices">
+        <h1 class="brands__title devices__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h1>
+        <div class="swiper-devices swiper">
           <ul class="swiper-wrapper devices__list">
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт ноутбуков</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт планшетов</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт ПК</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт мониторов</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт принтеров</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт телефонов</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт мышек</button></li>
-            <li class="devices__item swiper-slide"><button class="devices__button button">Ремонт клавиатур</button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт ноутбуков</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт планшетов</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт ПК</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт мониторов</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт принтеров</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт телефонов</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт мышек</p></button></li>
+            <li class="devices__item swiper-slide"><button class="devices__button button"><p class="devices__text">Ремонт клавиатур</p></button></li>
           </ul>
         </div>
+        <div class="swiper-pagination__devices swiper-pagination"></div>
       </section>
+      <div class="main__buttons">
+        <button class="content-buttons main__buttons--show-all button" id="showButtonDevices">
+          Показать все
+        </button>
+      </div>
+      <section class="prices prices-wrapper">
+        <h1 class="brands__title devices__title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h1>
+        <div class="swiper-prices swiper">
+          <ul class="swiper-wrapper prices__list">
+            <li class="prices__item swiper-slide">
+              <div class="prices__text">
+                <p class="prices__text--repair">Диагностика</p>
+                <p class="prices__text--price">Бесплатно</p>
+                <p class="prices__text--time">30 мин</p>
+              </div>
+              <button class="prices__button button">
+                <img src="img/orderButton.svg" alt="Заказать" class="prices__image">
+              </button>
+            </li>
+            <li class="prices__item swiper-slide">
+              <div class="prices__text">
+                <p class="prices__text--repair">Замена дисплея</p>
+                <p class="prices__text--price">1 000 ₽</p>
+                <p class="prices__text--time">30-120 мин</p>
+              </div>
+              <button class="prices__button button">
+                <img src="img/orderButton.svg" alt="Заказать" class="prices__image">
+              </button>
+            </li>
+            <li class="prices__item swiper-slide">
+              <div class="prices__text">
+                <p class="prices__text--repair">Замена полифонического динамика</p>
+                <p class="prices__text--price">1 000 ₽</p>
+                <p class="prices__text--time">30-120 мин</p>
+              </div>
+              <button class="prices__button button">
+                <img src="img/orderButton.svg" alt="Заказать" class="prices__image">
+              </button>
+            </li>
+            <li class="prices__item swiper-slide">
+              <div class="prices__text">
+                <p class="prices__text--repair">Тестирование с выдачей технического заключения</p>
+                <p class="prices__text--price">1 000 ₽</p>
+                <p class="prices__text--time">30-120 мин</p>
+              </div>
+              <button class="prices__button button">
+                <img src="img/orderButton.svg" alt="Заказать" class="prices__image">
+              </button>
+            </li>
+            <li class="prices__item swiper-slide">
+              <div class="prices__text">
+                <p class="prices__text--repair">Замена программного обеспечения</p>
+                <p class="prices__text--price">1 000 ₽</p>
+                <p class="prices__text--time">30-120 мин</p>
+              </div>
+              <button class="prices__button button">
+                <img src="img/orderButton.svg" alt="Заказать" class="prices__image">
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination__prices swiper-pagination"></div>
+        <article class="commercial-request">
+          <p class="commercial-request__text">Все цены указаны с учетом НДС.
+             Стоимость ремонта указана на единичную услугу.
+             Для получения коммерческого предложения на постоянное обслуживание,
+              оставьте заявку.</p>
+          <a href="#" class="commercial-request__href">Получить коммерческое предложение</a>
+        </article>
+      </section>
+      <footer class="page-footer">
+        <p class="page-footer__text">© 2019 CPS <br>
+          Разработано командой Apesong </p>
+        <p class="page-footer__text">Политика конфиденциальности</p>
+        <p class="page-footer__text">Информация, размещенная на данной странице,
+           не является публичной офертой</p>
+      </footer>
     </main>
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -753,7 +753,7 @@ p {
   left: 0;
   width: 100%;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 24px; }
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -792,16 +792,20 @@ html {
   height: 100%; }
 
 /* градиент для свайпера */
-body::after {
+/* body::after {
   content: "";
-  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
   position: absolute;
   right: 0px;
   top: 75px;
   height: 81px;
   width: 24px;
-  z-index: 2; }
-
+  z-index: 2;
+} */
 .brands-list {
   gap: 0 16px;
   margin-left: 16px;
@@ -813,7 +817,8 @@ body::after {
   margin-right: 16px;
   background-color: #fff;
   border-radius: 8px;
-  margin-top: 16px; }
+  margin-top: 16px;
+  max-width: 240px; }
 
 .brands-list__button {
   display: flex;
@@ -887,7 +892,7 @@ body::after {
     display: block;
     margin-left: 24px;
     padding-left: 33px;
-    font-family: "TT Lakes-Regular", "sans-serif";
+    font-family: 'TT Lakes-Medium', "sans-serif";
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -897,7 +902,8 @@ body::after {
     transition: transform 0.2s; }
   .main__buttons--show-all {
     /*     margin-bottom: 36px; */ }
-  .main__buttons--show-all::before {
+  .main__buttons--show-all::before,
+  .main__buttons--hidden::before {
     content: "";
     background-image: url(./static/expand-down.svg);
     background-repeat: no-repeat;
@@ -910,15 +916,7 @@ body::after {
   .main__buttons--hidden {
     margin-bottom: 20px; }
   .main__buttons--hidden::before {
-    content: "";
-    background-image: url(./static/expand-up.svg);
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    display: block;
-    position: absolute;
-    left: 1px;
-    bottom: 0px; } }
+    background-image: url(./static/expand-up.svg); } }
 
 @media (min-width: 1120px) {
   .brands__title {
@@ -942,21 +940,197 @@ body::after {
 .devices-wrapper {
   height: 284px; }
 
-.devices {
-  margin-left: 16px; }
+.devices__title {
+  margin-bottom: 16px; }
 
 .devices__list {
-  gap: 16px;
-  height: 160px; }
+  gap: 0 16px;
+  height: 160px;
+  margin-left: 16px; }
+
+.devices__item {
+  display: grid;
+  margin-right: 16px;
+  background-color: #fff;
+  max-width: 240px; }
+
+.devices__text {
+  font-family: 'TT Lakes-Medium', "sans-serif";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  position: absolute;
+  top: 16px;
+  left: 16px; }
 
 .devices__button {
   display: flex;
   height: 160px;
   width: 240px;
-  border: 1px solid; }
+  border: 1px solid #EAEAEA;
+  border-radius: 6px; }
 
 .devices__button:hover {
   transform: none; }
+
+.devices__button::after {
+  content: "";
+  background-image: url(./static/go.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px; }
+
+@media (min-width: 768px) {
+  .devices-wrapper {
+    height: auto; }
+  .devices__title {
+    margin-bottom: 24px; }
+  .devices__list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 224px);
+    grid-template-rows: repeat(4, 160px);
+    gap: 16px 24px;
+    margin-left: 24px; }
+  .devices__list--big {
+    height: 515px; }
+  .devices__button {
+    width: 224px; } }
+
+@media (min-width: 1120px) {
+  .devices__list {
+    display: grid !important;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(3, 160px);
+    gap: 16px 32px;
+    margin-left: 32px; }
+  .devices__button {
+    width: 240px; }
+  .devices__list--big {
+    height: 340px; } }
+
+.prices__list {
+  gap: 16px;
+  margin-left: 16px; }
+
+.prices__item {
+  min-width: 260px;
+  height: 200px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  margin-right: 16px;
+  border-radius: 6px; }
+
+.prices__text {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  gap: 16px; }
+
+.prices__text > p {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  color: #1B1C21;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px; }
+
+.prices__text--repair::before,
+.prices__text--price::before,
+.prices__text--time::before {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  margin-bottom: 4px; }
+
+.prices__text--repair,
+.prices__text--price,
+.prices__text--time {
+  display: flex;
+  flex-direction: column; }
+
+.prices__text--repair::before {
+  content: "Ремонтные услуги"; }
+
+.prices__text--price::before {
+  content: "Цена"; }
+
+.prices__text--time::before {
+  content: "Срок"; }
+
+.prices__button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px; }
+
+.commercial-request {
+  margin-left: 16px;
+  margin-top: 10px; }
+
+.commercial-request__text {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+  max-width: 421px; }
+
+.commercial-request__href {
+  font-family: 'TT Lakes-Medium', 'sans-serif';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative; }
+
+.commercial-request__href::after {
+  content: "";
+  background-image: url(./static/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 24px;
+  height: 24px;
+  display: inline-block; }
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 50px;
+  text-align: center; }
+
+.page-footer__text {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  max-width: 312px; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between; }
+  .page-footer__text {
+    max-width: 218px; }
+  .page-footer__text:first-child {
+    text-align: left; }
+  .page-footer__text:last-child {
+    text-align: right; } }
+
+@media (min-width: 1120px) {
+  .page-footer__text {
+    max-width: 330px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
