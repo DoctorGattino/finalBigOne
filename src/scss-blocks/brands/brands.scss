@@ -27,7 +27,7 @@ html {
 }
 
 /* градиент для свайпера */
-body::after {
+/* body::after {
   content: "";
   background: linear-gradient(
     270deg,
@@ -40,7 +40,7 @@ body::after {
   height: 81px;
   width: 24px;
   z-index: 2;
-}
+} */
 
 
 .brands-list {

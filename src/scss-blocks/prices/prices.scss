@@ -1,5 +1,5 @@
 .prices {
-}
+}\
 .prices-wrapper {
 }
 
@@ -16,31 +16,91 @@
 }
 
 .prices__list {
+  gap: 16px;
+  margin-left: 16px;
 }
 
 .prices__item {
+  min-width: 260px;
+  height: 200px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  margin-right: 16px;
+  border-radius: 6px;
 }
 
 .swiper-slide {
 }
 
 .prices__text {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  gap: 16px;
+}
+
+.prices__text > p {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  color: #1B1C21;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.prices__text--repair::before,
+.prices__text--price::before,
+.prices__text--time::before {
+  font-family: 'TT Lakes-Regular', 'sans-serif';
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.prices__text--repair,
+.prices__text--price,
+.prices__text--time {
+  display: flex;
+  flex-direction: column;
 }
 
 .prices__text--repair {
+
+}
+
+.prices__text--repair::before {
+   content: "Ремонтные услуги";
 }
 
 .prices__text--price {
 }
+.prices__text--price::before {
+  content: "Цена";
+}
 
 .prices__text--time {
 }
+.prices__text--time::before {
+  content: "Срок";
+}
 
 .prices__button {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
 }
 
 .button {
 }
 
 .prices__image {
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1120px) {
+  
 }

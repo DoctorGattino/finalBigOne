@@ -41,15 +41,15 @@ if (window.matchMedia('(max-width: 767px)').matches) {
       },
     });
   });
-/*   document.addEventListener('DOMContentLoaded', () => {
-    const swiper = new Swiper('.swiper', {
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper-prices', {
     // Optional parameters
       loop: true,
       slidesPerView: 'auto',
       spaceBetween: 1,
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination__prices',
         clickable: true,
       },
       breakpoints: {
@@ -61,7 +61,7 @@ if (window.matchMedia('(max-width: 767px)').matches) {
         },
       },
     });
-  }); */
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
