@@ -206,7 +206,6 @@ html {
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 72px);
     gap: 16px 32px;
-    gap: clamp(16px 8px, 16px 32px);
     margin-left: 32px;
   }
 
