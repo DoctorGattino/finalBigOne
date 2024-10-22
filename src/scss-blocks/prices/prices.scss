@@ -7,26 +7,27 @@
 }
 
 .swiper-prices {
-}
-
-.swiper {
-}
-
-.swiper-wrapper {
-}
-
-.prices__list {
-  gap: 16px;
   margin-left: 16px;
 }
 
+
+.prices__list {
+  gap: 16px;
+}
+
 .prices__item {
-  min-width: 260px;
+  width: 260px;
   height: 200px;
   border: 1px solid;
   background-color: #FFFFFF;
   margin-right: 16px;
   border-radius: 6px;
+}
+
+
+
+.prices__item--hidden {
+  display: none;
 }
 
 .swiper-slide {
@@ -99,8 +100,119 @@
 
 @media (min-width: 768px) {
   
+  .prices__text--repair::before,
+.prices__text--price::before,
+.prices__text--time::before {
+  display: none;
+}
+
+.prices__item--hidden {
+  display: flex;
+}
+
+.prices__header {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.prices__header > .prices__text > p {
+  color: #7E7E82;
+}
+
+
+
+.swiper-prices {
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 6px;
+}
+
+.prices__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  
+}
+
+.prices__item {
+  min-width: none;
+  width: auto;
+  background-color: #FFFFFF;
+  margin-right: 0;
+  border-radius: 0;
+  display: flex;
+  border: none;
+  height: 64px;
+  position: relative;
+}
+
+.prices__text:not(.prices__item:first-of-type .prices__text)::after {
+  content: "";
+  border-bottom: 1px solid #EAEAEA;
+  top: 0;
+  left: 16px;
+  right: 16px;
+  position: absolute;
+}
+
+  .prices__text {
+    flex-direction: row;
+    width: 85%;
+    align-items: center;
+  }
+
+  .prices__text--repair {
+    flex-basis: 50%;
+  }
+  
+  .prices__text--price {
+    flex-basis: 20%;
+  }
+  
+  .prices__text--time {
+    flex-basis: 30%;
+  }
+
+  .prices__button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    top: 16px;
+  }
+
+  .swiper-slide {
+  }
+
 }
 
 @media (min-width: 1120px) {
   
+
+  .swiper-prices {
+    margin-left: 32px;
+    margin-right: 32px;
+    border-radius: 6px;
+  }
+
+  .prices__header {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .prices__item {
+    min-width: none;
+    width: auto;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+  }
+
+
+
+  .prices__button {
+    position: absolute;
+    right: 24px;
+    bottom: 16px;
+    top: 16px;
+  }
 }
