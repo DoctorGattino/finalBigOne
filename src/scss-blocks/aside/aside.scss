@@ -65,6 +65,12 @@
   }
 }
 
+.aside-navigation__href:not(.active-aside):hover {
+  color: #FF3E79;
+  transition: color 0.5s;
+  text-decoration-line: underline;
+}
+
 .active-aside {
   &::before {
     content: url(../img/highlight.svg);
