@@ -121,6 +121,13 @@ p {
 .main__text-3 {
   display: none;
 }
+.main__text-4 {
+  display: none;
+}
+.main__text-4--show {
+  display: inline-block;
+}
+
 .main__button {
   display: flex;
   margin-left: 16px;

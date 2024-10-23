@@ -115,3 +115,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const showButton = document.getElementById('mainTextButton');
+  const textContainer = document.querySelector('.main__text-4');
+
+  let isHidden = false;
+
+  showButton.addEventListener('click', () => {
+    isHidden = !isHidden;
+
+    if (isHidden) {
+      // показываем текст
+      textContainer.classList.add('main__text-4--show');
+      showButton.textContent = 'Скрыть';
+      showButton.classList.remove('main__buttons--show-all');
+      showButton.classList.add('main__buttons--hidden');
+    } else {
+      // Скрываем текст
+
+      textContainer.classList.remove('main__text-4--show');
+      showButton.textContent = 'Читать далее';
+      showButton.classList.remove('main__buttons--hidden');
+      showButton.classList.add('main__buttons--show-all');
+    }
+  });
+});

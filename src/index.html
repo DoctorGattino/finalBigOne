@@ -8,7 +8,6 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-    <link rel="stylesheet" href="scss/style.css" />
   </head>
   <body class="body">
     <div class="container-aside container-aside__visible">
@@ -213,10 +212,19 @@
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
           </p>
-          <button class="button main__button">
-            <img src="img/expand.svg" alt="читать далее" />
-            <p class="main__button--text">Читать далее</p>
-          </button>
+          <p class="main__text-4">
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta nobis doloribus necessitatibus, 
+            quas eaque eum voluptates eos suscipit officia consequuntur harum totam dolorum sequi provident quia laborum fugiat cumque!
+          </p>
+          <div class="main__buttons">
+            <button
+              class="content-buttons main__buttons--show-all button"
+              id="mainTextButton"
+            >
+              Читать далее
+            </button>
+          </div>
         </article>
         <img
           src="img/photo_with-logo.jpg"
@@ -444,8 +452,63 @@
              не является публичной офертой</p>
         </footer>
       </div>
+      <aside class="feedback">
+        <div class="feedback__connection">
+        <button class="feedback__connection--close button">
+          <img class="feedback__connection--img" src="img/burger.svg" alt="back">
+        </button>
+          <p class="feedback__connection--text">Обратная связь</p>
+        </div>
+        <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+          <input class="feedback__form--name" placeholder="Имя" name="username" type="text" alt="Заполнить имя"/>
+          <input class="feedback__form--phone" placeholder="Телефон" name="userphone" type="tel" alt="Заполнить телефон"/>
+          <input class="feedback__form--email" placeholder="Электронная почта" name="email" type="email" alt="Заполнить электронную почту"/>
+          <textarea class="feedback__form--message" placeholder="Сообщение" name="text" alt="Сообщение"></textarea>
+        </form>
+        <div class="feedback__send">
+          <p class="feedback__send--text">
+            Нажимая "отправить", вы даете согласие на 
+            <span class="feedback__send--text-pink">
+              обработку персональных данных
+            </span>
+              и соглашаетесь с нашей 
+              <span class="feedback__send--text--pink">
+                политикой конфиденциальности
+              </span>
+          </p>
+          <button class="feedback__send--button">
+            <p class="feedback__send--button-text">Отправить</p>
+          </button>
+        </div>
+      </aside>
+    
+      <aside class="feedback-call">
+        <div class="feedback-call__connection">
+          <button class="feedback-call__close button">
+            <img class="feedback-call__connection--img" src="img/burger.svg" alt="back">
+          </button>
+          <p class="feedback-call__connection--text">Заказать звонок</p>
+        </div>
+        <form class="feedback-call__form" action="#" method="post" enctype="multipart/form-data">
+            <input class="feedback-call__form--phone" placeholder="Телефон" name="userphone" type="tel" alt="Заполнить телефон"/>
+        </form>
+        <div class="feedback-call__send">
+          <p class="feedback-call__send--text">
+            Нажимая "отправить", вы даете согласие на 
+            <span class="feedback-call__send--text-pink">
+              обработку персональных данных
+            </span>
+            и соглашаетесь с нашей 
+            <span class="feedback-call__send--text-pink">
+              политикой конфиденциальности
+            </span>
+          </p>
+          <button class="feedback-call__send--button">
+            <p class="feedback-call__send--button-text">Отправить</p>
+          </button>
+        </div>
+      </aside>
     </main>
-    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
