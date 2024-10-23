@@ -20,14 +20,15 @@
   display: inline-block;
   margin-top: 8px;
   position: relative;
+
+  &::after {
+    content: "";
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
 }
 
-.commercial-request__href::after {
-  content: "";
-  background-image: url(../img/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-}

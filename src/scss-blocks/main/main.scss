@@ -1,5 +1,6 @@
 .body {
   margin: auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -14,10 +15,10 @@
   align-items: center;
   padding-left: 16px;
   height: 88px;
-}
 
-.header__menu::after {
-  content: url(../img/divider.svg);
+  &::after {
+    content: url(../img/divider.svg);
+  }
 }
 
 
@@ -53,12 +54,13 @@
   padding: 24px 16px 0 0;
   color: #1b1c21;
   margin: 0;
+
+  &::before {
+    content: url(../img/highlight.svg);
+    padding-right: 12px;
+  }
 }
 
-.main__title::before {
-  content: url(../img/highlight.svg);
-  padding-right: 12px;
-}
 
 .main__application {
   display: none;
@@ -73,18 +75,19 @@
 .main__navigation--item {
   height: 40px;
   border: 2px solid transparent;
+  margin-bottom: 5px;
+}
+
+.button {
+  border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
 }
 
 
-.button:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s;
-}
-
-.main__button:hover {
-  color: #1b1c21;
-  text-decoration: underline;
-}
 
 .main__navigation--href {
   padding: 8px 16.67px 8px 16.67px;
@@ -94,6 +97,15 @@
   letter-spacing: -0.2px;
   display: inline-block;
   color: #7e7e82;
+}
+
+.active-main__navigation {
+  transform: scale(1.001);
+  transition: transform 1s, background 0.2s, border 0.3s;
+  border-radius: 6px;
+  border: 2px solid;
+  border-color: #b8ffec;
+  background-color: #fff;
 }
 
 p {
@@ -133,7 +145,14 @@ p {
   margin-left: 16px;
   margin-bottom: 16px;
   background-color: inherit;
+
+  &:hover {
+    color: #1b1c21;
+    text-decoration: underline;
+  }
 }
+
+
 .main__img {
   width: 100%;
 }
@@ -160,15 +179,16 @@ p {
 
   .main__about-us {
     height: 100%;
+  
+    > p {
+      line-height: 20px;
+      color: #1b1c21;
+      margin-left: 24px;
+      margin-right: 24px;
+      min-width: 312px;
+    }
   }
-
-  .main__about-us > p {
-    line-height: 20px;
-    color: #1b1c21;
-    margin-left: 24px;
-    margin-right: 24px;
-    min-width: 312px;
-  }
+  
 
   .main__img {
     width: 50%;
@@ -179,11 +199,11 @@ p {
     align-items: center;
     padding: 20px;
     gap: 16px;
-  }
-
-  .header__communication::after {
-    content: url(../img/divider.svg);
-    margin-left: 4px;
+  
+    &::after {
+      content: url(../img/divider.svg);
+      margin-left: 4px;
+    }
   }
 
   .header__menu::after {

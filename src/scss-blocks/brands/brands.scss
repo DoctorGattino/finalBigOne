@@ -26,21 +26,6 @@ html {
   height: 100%;
 }
 
-/* градиент для свайпера */
-/* body::after {
-  content: "";
-  background: linear-gradient(
-    270deg,
-    #f8f8f8 16.84%,
-    rgba(248, 248, 248, 0.0001) 100%
-  );
-  position: absolute;
-  right: 0px;
-  top: 75px;
-  height: 81px;
-  width: 24px;
-  z-index: 2;
-} */
 
 
 .brands-list {
@@ -67,19 +52,20 @@ html {
   position: relative;
   border: 1px solid #eaeaea;
   border-radius: 8px;
+
+  &::after {
+    content: "";
+    background-image: url(../img/go.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
 }
 
-.brands-list__button::after {
-  content: "";
-  background-image: url(../img/go.svg);
-  background-repeat: no-repeat;
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 16px;
-  top: 16px;
-}
 
 /* стили при наведении */
 
@@ -163,16 +149,13 @@ html {
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight: 500;
+  
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s;
+    }
   }
-
-  .content-buttons:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-  }
-
-  .main__buttons--show-all {
-/*     margin-bottom: 36px; */
-  }
+  
 
   .main__buttons--show-all::before,
   .main__buttons--hidden::before {
@@ -187,13 +170,14 @@ html {
     bottom: 0px;
   }
 
-  .main__buttons--hidden {
-    margin-bottom: 20px;
-  }
+.main__buttons--hidden {
+  margin-bottom: 20px;
 
-  .main__buttons--hidden::before {
+  &::before {
     background-image: url(../img/expand-up.svg);
   }
+}
+
 }
 
 @media (min-width: 1120px) {
