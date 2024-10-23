@@ -1,3 +1,4 @@
+
 .feedback-call {
 	position: fixed;
 	width: 320px;
@@ -5,7 +6,7 @@
 	top: 0;
 	left: auto;
 	right: 0;
-	background: $back_wite;
+	background: #ffff;
 	box-shadow: -44px 5px 41px -4px rgba(41, 42, 43, 0.2);
 	z-index: 6;
 
@@ -29,7 +30,7 @@
 				height: 40px;
 				width: 4px;
 				left: 0;
-				background-color: $highlight_color;
+				background-color: #41F6D7;
 				border-radius: 0px 10px 10px 0px;
 			}
 		}
@@ -41,12 +42,12 @@
 		&--phone {
 			width: 99%;
 			height: 48px;
-			border: 1px solid $border_form_color;
+			border: 1px solid #EAEAEA;
 			border-radius: 10px;
 			padding-left: 10px;
 			&:hover {
 				transition: 0.2s;
-				border: 1px solid $highlight_color;
+				border: 1px solid #41F6D7;
 			}
 		}
 	}
@@ -60,11 +61,11 @@
 			font-family: "TT Lakes", sans-serif;
 			size: 14px;
 			height: 16px;
-			color: $text_color_ser;
+			color: #7E7E82;
 		}
 		
 		&--text-pink {
-			color: $back_pink;
+			color: #FF3E79;
 		}
 
 		&--button {
@@ -72,7 +73,7 @@
 			align-items: center;
 			margin-left: auto;
 			margin-right: 16px;
-			background-color: $back_pink;
+			background-color: #FF3E79;
 			width: 136px;
 			height: 32px;
 			border-radius: 20px;
@@ -86,7 +87,7 @@
 			font-family: "TT Lakes", sans-serif;
 			position: relative;
 			text-transform: uppercase;
-			color: $back_wite;
+			color: #ffff;
 			font-size: 12px;
 			line-height: 24px;
 			letter-spacing: -0.15px;
@@ -96,7 +97,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				border-color: $back_wite;
+				border-color: #ffff;
 				border-style: solid;
 				border-width: 0em 0.2em 0.2em 0em;
 				height: 0.5em;
@@ -110,11 +111,11 @@
 	}
 }
 
-@media (min-width: $screen-xl) {
+@media (min-width: 1120px) {
 	.feedback-call {
 		width: 440px;
 		height: 100%;
-		border-left: 1px solid $border_color;
+		border-left: 1px solid #B8FFEC;
 		&__connection {
 			display: flex;
 			align-items: center;
@@ -131,7 +132,7 @@
 				width: 4px;
 				right: 15.6em;
 				left: 0;
-				background-color: $highlight_color;
+				background-color: #41F6D7;
 				border-radius: 0px 10px 10px 0px;
 			}
 		}
