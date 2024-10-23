@@ -1,6 +1,6 @@
 .footer-border {
   width: auto;
-  border-top: 1px solid #D9FFF5;
+  border-top: 1px solid #d9fff5;
 }
 
 .page-footer {
@@ -15,38 +15,34 @@
   padding-top: 16px;
 }
 
-
-
 .page-footer__text {
   font-family: 'TT Lakes-Regular', 'sans-serif';
   font-size: 14px;
   line-height: 16px;
-  color: #7E7E82;
+  color: #7e7e82;
   max-width: 312px;
 }
 
 @media (min-width: 768px) {
-  
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
   }
-  
+
   .page-footer__text {
     max-width: 218px;
   }
   .page-footer__text:first-child {
     text-align: left;
   }
-  
+
   .page-footer__text:last-child {
     text-align: right;
   }
 }
 
 @media (min-width: 1120px) {
-  
   .page-footer__text {
     max-width: 330px;
   }

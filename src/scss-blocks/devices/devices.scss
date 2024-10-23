@@ -20,12 +20,12 @@
 }
 
 .devices__text {
-  font-family: 'TT Lakes-Medium', "sans-serif";
+  font-family: 'TT Lakes-Medium', 'sans-serif';
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1B1C21;
-  position:absolute;
+  color: #1b1c21;
+  position: absolute;
   top: 16px;
   left: 16px;
 }
@@ -34,7 +34,7 @@
   display: flex;
   height: 160px;
   width: 240px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   border-radius: 6px;
 
   &:hover {
@@ -44,7 +44,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     background-image: url(../img/go.svg);
     background-repeat: no-repeat;
     display: block;
@@ -63,9 +63,7 @@
   }
 }
 
-
 @media (min-width: 768px) {
-  
   .devices-wrapper {
     height: auto;
   }
@@ -73,7 +71,6 @@
   .devices__title {
     margin-bottom: 24px;
   }
-
 
   .devices__list {
     display: grid !important;
@@ -89,31 +86,23 @@
 
   .devices__button {
     width: 224px;
-
   }
-
-
 }
 
 @media (min-width: 1120px) {
-
   .devices__list {
     display: grid !important;
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 160px);
     gap: 16px 32px;
     margin-left: 32px;
-    
   }
 
   .devices__button {
     width: 240px;
-
   }
 
   .devices__list--big {
     height: 340px;
   }
-
-  
 }

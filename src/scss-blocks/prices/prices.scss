@@ -1,15 +1,6 @@
-.prices {
-}\
-.prices-wrapper {
-}
-
-.devices__title {
-}
-
 .swiper-prices {
   margin-left: 16px;
 }
-
 
 .prices__list {
   gap: 16px;
@@ -18,18 +9,13 @@
 .prices__item {
   width: 260px;
   height: 200px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-right: 16px;
   border-radius: 6px;
 }
 
-
-
 .prices__item--hidden {
   display: none;
-}
-
-.swiper-slide {
 }
 
 .prices__text {
@@ -41,7 +27,7 @@
 
 .prices__text > p {
   font-family: 'TT Lakes-Regular', 'sans-serif';
-  color: #1B1C21;
+  color: #1b1c21;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
@@ -51,7 +37,7 @@
 .prices__text--price::before,
 .prices__text--time::before {
   font-family: 'TT Lakes-Regular', 'sans-serif';
-  color: #7E7E82;
+  color: #7e7e82;
   font-size: 14px;
   line-height: 16px;
   position: relative;
@@ -65,24 +51,16 @@
   flex-direction: column;
 }
 
-.prices__text--repair {
-
-}
-
 .prices__text--repair::before {
-   content: "Ремонтные услуги";
+  content: 'Ремонтные услуги';
 }
 
-.prices__text--price {
-}
 .prices__text--price::before {
-  content: "Цена";
+  content: 'Цена';
 }
 
-.prices__text--time {
-}
 .prices__text--time::before {
-  content: "Срок";
+  content: 'Срок';
 }
 
 .prices__button {
@@ -91,68 +69,58 @@
   bottom: 16px;
 }
 
-.button {
-}
-
-.prices__image {
-}
-
 @media (min-width: 768px) {
-  
   .prices__text--repair::before,
-.prices__text--price::before,
-.prices__text--time::before {
-  display: none;
-}
+  .prices__text--price::before,
+  .prices__text--time::before {
+    display: none;
+  }
 
-.prices__item--hidden {
-  display: flex;
-}
+  .prices__item--hidden {
+    display: flex;
+  }
 
-.prices__header {
-  margin-left: 24px;
-  margin-right: 24px;
-}
+  .prices__header {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 
-.prices__header > .prices__text > p {
-  color: #7E7E82;
-}
+  .prices__header > .prices__text > p {
+    color: #7e7e82;
+  }
 
+  .swiper-prices {
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 6px;
+  }
 
+  .prices__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 
-.swiper-prices {
-  margin-left: 24px;
-  margin-right: 24px;
-  border-radius: 6px;
-}
+  .prices__item {
+    min-width: none;
+    width: auto;
+    background-color: #ffffff;
+    margin-right: 0;
+    border-radius: 0;
+    display: flex;
+    border: none;
+    height: 64px;
+    position: relative;
+  }
 
-.prices__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  
-}
-
-.prices__item {
-  min-width: none;
-  width: auto;
-  background-color: #FFFFFF;
-  margin-right: 0;
-  border-radius: 0;
-  display: flex;
-  border: none;
-  height: 64px;
-  position: relative;
-}
-
-.prices__text:not(.prices__item:first-of-type .prices__text)::after {
-  content: "";
-  border-bottom: 1px solid #EAEAEA;
-  top: 0;
-  left: 16px;
-  right: 16px;
-  position: absolute;
-}
+  .prices__text:not(.prices__item:first-of-type .prices__text)::after {
+    content: '';
+    border-bottom: 1px solid #eaeaea;
+    top: 0;
+    left: 16px;
+    right: 16px;
+    position: absolute;
+  }
 
   .prices__text {
     flex-direction: row;
@@ -163,11 +131,11 @@
   .prices__text--repair {
     flex-basis: 50%;
   }
-  
+
   .prices__text--price {
     flex-basis: 20%;
   }
-  
+
   .prices__text--time {
     flex-basis: 30%;
   }
@@ -178,15 +146,9 @@
     bottom: 16px;
     top: 16px;
   }
-
-  .swiper-slide {
-  }
-
 }
 
 @media (min-width: 1120px) {
-  
-
   .swiper-prices {
     margin-left: 32px;
     margin-right: 32px;
@@ -201,12 +163,10 @@
   .prices__item {
     min-width: none;
     width: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 6px;
     display: flex;
   }
-
-
 
   .prices__button {
     position: absolute;
