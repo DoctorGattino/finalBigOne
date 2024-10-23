@@ -400,14 +400,6 @@ template {
   scrollbar-width: none;
   z-index: 4; }
 
-/* .burger-menu {
-	position: fixed;
-	height: 100%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	scrollbar-width: none;
-	z-index: 4;
-} */
 .aside {
   padding-left: 16px;
   width: 320px; }
@@ -455,14 +447,14 @@ template {
   color: #1b1c21;
   width: 100%; }
 
-.active::before {
+.active-aside::before {
   content: url(./static/highlight.svg);
   margin-right: 12px;
   margin-left: -16px;
   position: relative;
   top: 4px; }
 
-.active {
+.active-aside {
   color: #7e7e82;
   display: flex;
   align-items: center;
@@ -505,6 +497,9 @@ template {
   color: #1b1c21;
   font-family: "TT Lakes-medium", "sans-serif"; }
 
+.current-lang {
+  color: red !important; }
+
 @media (min-width: 768px) {
   .aside {
     display: flex;
@@ -518,7 +513,7 @@ template {
         margin-left: auto; }
   .aside-navigation__item {
     margin-bottom: 32px; }
-  .active::before {
+  .active-aside::before {
     margin-right: 20px;
     margin-left: -24px; }
   .language__item {
@@ -545,18 +540,11 @@ template {
     padding-left: 0;
     padding-bottom: 37.27px; }
   .aside-navigation__item {
-    margin-bottom: 28px; }
-  /*   .burger-menu {
-		position: sticky;
-    top: 1px;
-		box-shadow: none;
-		overflow-y: scroll;
-		overflow-x: hidden;
-		scrollbar-width: none;
-	} */ }
+    margin-bottom: 28px; } }
 
 .body {
-  margin: auto; }
+  margin: auto;
+  overflow-x: hidden; }
 
 .header {
   display: flex;
@@ -615,10 +603,11 @@ template {
 
 .main__navigation--item {
   height: 40px;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  margin-bottom: 5px; }
 
 .button:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: transform 0.3s; }
 
 .main__button:hover {
@@ -633,6 +622,14 @@ template {
   letter-spacing: -0.2px;
   display: inline-block;
   color: #7e7e82; }
+
+.active-main__navigation {
+  transform: scale(1.001);
+  transition: transform 1s, background 0.2s, border 0.3s;
+  border-radius: 6px;
+  border: 2px solid;
+  border-color: #b8ffec;
+  background-color: #fff; }
 
 p {
   color: #1b1c21; }
@@ -1006,9 +1003,6 @@ html {
   border: 1px solid #EAEAEA;
   border-radius: 6px; }
 
-.devices__button:hover {
-  transform: none; }
-
 .devices__button::after {
   content: "";
   background-image: url(./static/go.svg);
@@ -1057,7 +1051,6 @@ html {
 .prices__item {
   width: 260px;
   height: 200px;
-  border: 1px solid;
   background-color: #FFFFFF;
   margin-right: 16px;
   border-radius: 6px; }
@@ -1314,8 +1307,8 @@ html {
   top: 0;
   left: auto;
   right: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: none;
   scrollbar-width: none;
   background: #ffff;
   box-shadow: -44px 5px 41px -4px rgba(41, 42, 43, 0.2);
