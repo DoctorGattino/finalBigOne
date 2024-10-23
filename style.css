@@ -606,6 +606,9 @@ template {
   border: 2px solid transparent;
   margin-bottom: 5px; }
 
+.button {
+  border-radius: 50%; }
+
 .button:hover {
   transform: scale(1.05);
   transition: transform 0.3s; }
@@ -1003,6 +1006,11 @@ html {
   border: 1px solid #EAEAEA;
   border-radius: 6px; }
 
+.devices__button:hover {
+  transform: none;
+  box-shadow: 0px 0px 10px 0px inset #b8ffec;
+  transition: box-shadow 1s; }
+
 .devices__button::after {
   content: "";
   background-image: url(./static/go.svg);
@@ -1013,6 +1021,12 @@ html {
   position: absolute;
   right: 16px;
   bottom: 16px; }
+
+.devices__button:hover::after {
+  transform: rotate(360deg) scale(1.1);
+  box-shadow: 0px 0px 10px 0px #20493e;
+  transition: transform 0.5s, box-shadow 0.6s;
+  border-radius: 50%; }
 
 @media (min-width: 768px) {
   .devices-wrapper {
