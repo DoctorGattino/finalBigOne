@@ -21,7 +21,9 @@ activeNavLink.forEach((item) => {
 })
 
 function addActiveMainNavLink() {
-  activeMainNavLink.forEach((el) => el.classList.remove('active-main__navigation'))
+  activeMainNavLink.forEach((el) =>
+    el.classList.remove('active-main__navigation')
+  )
   this.classList.add('active-main__navigation')
 }
 
