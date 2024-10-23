@@ -11,6 +11,62 @@ $border_form_color: #EAEAEA;
 $screen-md: 768px;
 $screen-xl: 1120px;
 
+.transparent-back-BM {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.90;
+	z-index: 3;
+}
+
+.transparent-back-FB {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.90;
+	z-index: 5;
+}
+
+.feedback {
+	display: none;
+}
+
+.feedback-call {
+	display: none;
+}
+
+.open-menu {
+	animation: openMenu 0.8s ease-in-out;
+}
+
+@keyframes openMenu {
+	from {
+		opacity: 0;
+
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.menu-back__open {
+	animation: menuBackOpen 0.8s ease-in-out;
+}
+
+@keyframes menuBackOpen {
+	from {
+		opacity: 0;
+
+	}
+	to {
+		opacity: 0.90;
+	}
+}
+
 .feedback {
 	position: fixed;
 	width: 320px;
@@ -34,11 +90,9 @@ $screen-xl: 1120px;
 
 		&--text {
 			color: #1B1C21;
-			font-family: "TT Lakes", sans-serif;
-			font-size: 28px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 40px;
+			font-family: "TT Lakes-Bold", sans-serif;
+			font-size: 24px;
+			line-height: 32px;
 			letter-spacing: -0.6px;
 			padding: 24px 12px 0 12px;
 			&::before {
@@ -196,7 +250,7 @@ $screen-xl: 1120px;
 				height: 40px;
 				width: 4px;
 				right: 15.6em;
-				left: auto;
+				left: 0;
 				background-color: $highlight_color;
 				border-radius: 0px 10px 10px 0px;
 			}

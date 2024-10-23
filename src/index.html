@@ -10,13 +10,15 @@
   />
   </head>
   <body class="body">
-    <div class="container-aside container-aside__visible">
+    <div class="transparent-back-BM"></div>
+    <div class="transparent-back-FB"></div>
+    <div class="container-aside container-aside__visible" id="burgerMenu">
       <aside class="aside">
         <header class="aside__header">
           <nav>
             <ul class="aside__list">
               <li>
-                <button class="button burger__close">
+                <button class="button burger__close" id="closeMenubar">
                   <img src="img/burger.svg" alt="Закрыть" />
                 </button>
               </li>
@@ -71,12 +73,12 @@
           <nav class="feedback-navigation">
             <ul class="feedback-navigation__list">
               <li>
-                <button class="button feedback-navigation__button">
-                  <img src="img/chat copy.svg" alt="Заказать звонок" />
+                <button class="button feedback-navigation__button button-contact__call">
+                  <img src="img/call.svg" alt="Заказать звонок" />
                 </button>
               </li>
               <li>
-                <button class="button feedback-navigation__button">
+                <button class="button feedback-navigation__button button-contact__chat">
                   <img src="img/chat.svg" alt="Начать чат" />
                 </button>
               </li>
@@ -109,7 +111,7 @@
       <nav class="header__left">
         <ul class="header__menu">
           <li>
-            <button class="button button__burger" type="button">
+            <button class="button button__burger" id="openMenubar" type="button">
               <img src="img/burger-open.svg" alt="Меню" />
             </button>
           </li>
@@ -123,12 +125,12 @@
       <nav class="header__right">
         <ul class="header__communication">
           <li>
-            <button class="button">
+            <button class="button button__call">
               <img src="img/call.svg" alt="Заказать звонок" />
             </button>
           </li>
           <li>
-            <button class="button">
+            <button class="button button__chat">
               <img src="img/chat.svg" alt="Открыть чат" />
             </button>
           </li>
