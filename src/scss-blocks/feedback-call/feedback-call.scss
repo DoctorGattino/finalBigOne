@@ -17,12 +17,10 @@
 		}
 
 		&--text {
-			color: $textColor_black;
-			font-family: "TT Lakes", sans-serif;
-			font-size: 28px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: 40px;
+			color: #1B1C21;
+			font-family: "TT Lakes-Bold", sans-serif;
+			font-size: 24px;
+			line-height: 32px;
 			letter-spacing: -0.6px;
 			padding: 24px 12px 0 12px;
 			&::before {
